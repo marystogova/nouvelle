@@ -3,7 +3,7 @@
 .links {
     padding: 16px 9px;
     box-sizing: border-box;
-    background-color: var(--color-grey-light);
+    background-color: var(--color-grey-lightest);
 }
 
 .links__list {
@@ -38,12 +38,12 @@
 .links__description {
     margin: 0 5px 0 0;
     display: flex;
-    flex: 0 0 144px;
+    flex: 0 0 172px;
     text-align: left;
 }
 
 .links__link {
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 .links__link::before {
@@ -95,7 +95,7 @@
 
     .links__description {
         margin-right: 15px;
-        flex: 0 0 190px;
+        flex: 0 0 252px;
     }
 
     .links__link {
@@ -108,33 +108,32 @@
     }
 }
 
-
 /* Links Icons */
 
 .links__link--vk::before {
-    background-image: url('/images/icons/social-vk.svg');
+    background-image: url('/images/social/vk.svg');
 }
 
-.links__link--fb::before {
-    background-image: url('/images/icons/social-fb.svg');
+.links__link--facebook::before {
+    background-image: url('/images/social/facebook.svg');
 }
 
 .links__link--twitter::before {
-    background-image: url('/images/icons/social-twitter.svg');
+    background-image: url('/images/social/twitter.svg');
 }
 
 .links__link--telegram::before {
-    background-image: url('/images/icons/social-telegram.svg');
+    background-image: url('/images/social/telegram.svg');
 }
 
 .links__link--github::before {
-    background-image: url('/images/icons/social-github.svg');
+    background-image: url('/images/social/github.svg');
 }
 
 .links__link--slack::before {
-    background-image: url('/images/icons/social-slack.svg');
+    background-image: url('/images/social/slack.svg');
 }
 
 .links__link--youtube::before {
-    background-image: url('/images/icons/social-youtube.svg');
+    background-image: url('/images/social/youtube.svg');
 }

@@ -6,6 +6,33 @@ layout: page.njk
 
 <main class="main">
     {{ content | safe }}
+
+    <div class="articles">
+        <ul class="articles__list">
+        {%- for article in collections.article | reverse -%}
+            {% if loop.index0 < 5 %}
+                <li class="articles__item">
+                    <article class="articles__article">
+                        <h2 class="articles__title">
+                            <a href="{{ article.url }}">
+                                {{ article.data.title }}
+                            </a>
+                        </h2>
+                        <div class="articles__date">
+                            {{ article.data.date }}
+                        </div>
+                        <div class="articles__author">
+                            {{ article.data.source.author }}
+                        </div>
+                    </article>
+                </li>
+            {%- endif -%}
+        {%- endfor -%}
+        </ul>
+        <p class="articles__more">
+            <a class="articles__link" href="/articles/">Все статьи</a>
+        </p>
+    </div>
 </main>
 
 {% include 'aside.njk' %}
