@@ -7,32 +7,32 @@ layout: page.njk
 <main class="main">
     {{ content | safe }}
 
-    <div class="articles">
-        <ul class="articles__list">
+    <ul class="articles__list">
         {%- for article in collections.article | reverse -%}
             {% if loop.index0 < 5 %}
-                <li class="articles__item">
-                    <article class="articles__article">
+                <li class="articles__item{{ "--main" if loop.index0 == 0 }}">
+                    <article class="articles">
                         <h2 class="articles__title">
                             <a href="{{ article.url }}">
                                 {{ article.data.title }}
                             </a>
                         </h2>
-                        <div class="articles__date">
-                            {{ article.data.date }}
-                        </div>
-                        <div class="articles__author">
-                            {{ article.data.source.author }}
-                        </div>
+                        {#<div class="articles__description">#}
+                        <img class="articles__author-img" src="/images/author--blue.png"
+                             height="104" width="113" alt="{{ article.data.source.author }}">
+                        <p>
+                            <time class="articles__date" datetime="{{ article.date }}">4 февраля</time>
+                            <span class="articles__author">{{ article.data.source.author }}</span>
+                        </p>
+                        {#</div>#}
                     </article>
                 </li>
             {%- endif -%}
         {%- endfor -%}
-        </ul>
-        <p class="articles__more">
-            <a class="articles__link" href="/articles/">Все статьи</a>
-        </p>
-    </div>
+    </ul>
+    <p class="articles__more">
+        <a class="articles__link" href="/articles/">Все статьи</a>
+    </p>
 </main>
 
 {% include 'aside.njk' %}
