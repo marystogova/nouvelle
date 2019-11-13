@@ -1,10 +1,12 @@
 ---
 title: 'Инклюзивные компоненты: переключатели'
 date: 2019-01-05
+author:
+    name: 'Хейдон Пикеринг'
+    url: 'https://www.heydonworks.com/'
 source:
     title: 'Toggle buttons'
     url: 'https://inclusive-components.design/toggle-button/'
-    author: 'Хейдон Пикеринг'
 translators:
   - name: 'Татьяна Фокина'
     url: 'https://medium.com/@fokinatatiana'

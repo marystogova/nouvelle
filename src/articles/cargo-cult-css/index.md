@@ -1,10 +1,12 @@
 ---
 title: 'Культ карго CSS'
 date: 2014-02-19
+author:
+    name: 'Бен Дарлоу'
+    url: 'http://www.kapowaz.net/'
 source:
     title: 'Cargo Cult CSS'
     url: 'http://www.kapowaz.net/articles/cargo-cult-css'
-    author: 'Бен Дарлоу'
 translators:
   - name: 'Влад Андерсен'
     url: 'http://www.facebook.com/vlad.andersen'

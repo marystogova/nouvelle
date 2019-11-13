@@ -1,10 +1,12 @@
 ---
 title: 'Инклюзивные компоненты: переключатель темы'
 date: 2019-09-02
+author:
+    name: 'Хейдон Пикеринг'
+    url: 'https://www.heydonworks.com/'
 source:
     title: 'A Theme Switcher'
     url: https://inclusive-components.design/a-theme-switcher/
-    author: 'Хейдон Пикеринг'
 translators:
   - name: 'Татьяна Фокина'
     url: 'https://medium.com/@fokinatatiana'
@@ -142,7 +144,6 @@ tags: article
         // Разметка компонента в JSX
       }
     }
-
     export default ThemeSwitch;
 
 После рендеринга разметка переключателя, имеющего неактивное состояние и состояние по умолчанию, будет выглядеть таким образом (примечания после этого фрагмента кода):
@@ -180,7 +181,6 @@ tags: article
 Чтобы оживить компонент, включим вспомогательную функцию `isActive()`, а также `toggle()`, которая фактически переключает состояние:
 
     isActive = () => this.state.active;`
-
       toggle = () => {
         this.setState({
           active: !this.isActive()
@@ -313,9 +313,11 @@ tags: article
 
 * Если вам нужно определить WHCM, чтобы добавить улучшения, вы можете использовать следующий медиазапрос:
 
-    @media (-ms-high-contrast: active) {
-      /* Относящийся к WHCM код */
-    }
+```
+@media (-ms-high-contrast: active) {
+    /* Относящийся к WHCM код */
+}
+```
 
 ## Проп `preserveRasters`
 
@@ -326,7 +328,6 @@ tags: article
     <ThemeSwitch preserveRasters={false} />
 
 Я могу запросить этот проп в виде строки CSS и повторно инвертировать изображения, если её значение равно `true`:
-
 
     this.css = `
       html { filter: invert(100%); background: #fefefe; }

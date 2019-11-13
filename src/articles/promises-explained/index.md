@@ -2,10 +2,12 @@
 title: 'Промисы на примерах из жизни'
 subtitle: 'Поговорим о промисах простыми словами'
 date: 2017-12-05
+author:
+    name: 'Шрути Капур'
+    url: 'https://twitter.com/shrutikapoor08'
 source:
     title: 'JavaScript: promises explained with simple real life analogies'
     url: 'https://codeburst.io/javascript-promises-explained-with-simple-real-life-analogies-dd6908092138'
-    author: 'Шрути Капур'
 translators:
   - name: 'Артур Храбров'
     url: 'https://medium.com/@nzvtrkk'

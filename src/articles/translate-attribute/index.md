@@ -1,10 +1,12 @@
 ---
 title: 'В HTML5 добавлен новый атрибут translate'
 date: 2012-07-30
+author:
+    name: 'Ричард Ишида'
+    url: 'http://rishida.net'
 source:
     title: 'HTML5 adds new translate attribute'
     url: 'http://rishida.net/blog/?p=831'
-    author: 'Ричард Ишида'
 translators:
   - name: 'Влад Андерсен'
     url: 'http://www.facebook.com/vlad.andersen'

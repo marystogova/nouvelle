@@ -1,10 +1,12 @@
 ---
 title: 'Основы адаптивной типографики'
 date: 2012-09-10
+author:
+    name: 'Оливер Райхенштайн'
+    url: 'https://twitter.com/reichenstein'
 source:
     title: 'Responsive typography: the basics'
     url: 'http://informationarchitects.net/blog/responsive-typography-the-basics/'
-    author: 'Оливер Райхенштайн'
 translators:
   - name: 'Александр Котоманов'
     url: 'http://alex.kotomanov.com/'

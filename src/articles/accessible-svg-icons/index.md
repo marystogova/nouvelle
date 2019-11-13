@@ -1,10 +1,12 @@
 ---
 title: 'Доступные SVG-иконки с инлайновыми спрайтами'
 date: 2018-12-17
+author:
+    name: 'Марко Хенгстенберг'
+    url: 'https://twitter.com/nice2meatu'
 source:
     title: 'Accessible SVG Icons with Inline Sprites'
     url: 'https://www.24a11y.com/2018/accessible-svg-icons-with-inline-sprites/'
-    author: 'Марко Хенгстенберг'
 translators:
   - name: 'Татьяна Фокина'
     url: 'https://medium.com/@fokinatatiana'

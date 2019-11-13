@@ -1,10 +1,12 @@
 ---
 title: 'Что нового в JavaScript 2019'
 date: 2019-01-30
+author:
+    name: 'Девид Нил'
+    url: 'https://reverentgeek.com/'
 source:
     title: 'What’s New in JavaScript for 2019'
     url: 'https://developer.okta.com/blog/2019/01/22/whats-new-in-es2019'
-    author: 'Девид Нил'
 translators:
   - name: 'Алёна Батицкая'
     url: 'https://medium.com/@ABatickaya'

@@ -1,10 +1,12 @@
 ---
 title: 'Инклюзивные компоненты: тултипы и тоглтипы'
 date: 2019-07-23
+author:
+    name: 'Хейдон Пикеринг'
+    url: 'https://www.heydonworks.com/'
 source:
     title: 'Tooltips & Toggletips'
     url: 'https://inclusive-components.design/tooltips-toggletips/'
-    author: 'Хейдон Пикеринг'
 translators:
   - name: 'Татьяна Фокина'
     url: 'https://medium.com/@fokinatatiana'

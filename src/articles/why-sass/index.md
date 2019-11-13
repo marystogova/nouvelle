@@ -1,10 +1,12 @@
 ---
 title: 'Почему Sass?'
 date: 2013-12-10
+author:
+    name: 'Дэн Седерхольм'
+    url: 'http://simplebits.com/'
 source:
     title: 'Why Sass?'
     url: 'http://alistapart.com/article/why-sass'
-    author: 'Дэн Седерхольм'
 translators:
   - name: 'Наталья Арефьева'
     url: 'https://twitter.com/n_snork'

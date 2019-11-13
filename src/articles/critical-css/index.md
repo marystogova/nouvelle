@@ -1,10 +1,12 @@
 ---
 title: 'Извлекаем критический CSS'
 date: 2019-10-08
+author:
+    name: 'Милица Михайлия'
+    url: 'https://twitter.com/bibydigital'
 source:
     title: 'Extract critical CSS'
     url: 'https://web.dev/extract-critical-css'
-    author: 'Милица Михайлия'
 translators:
   - name: 'Алёна Батицкая'
     url: 'https://medium.com/@ABatickaya'
@@ -14,10 +16,6 @@ editors:
 layout: article.njk
 tags: article
 ---
-
-![](images/buffering.png)
-
-[Картинка Ивана Гриззла с Dribble](https://dribbble.com/shots/3510389-Critical-video-considerations-for-brands)
 
 Браузер должен скачать и распарсить CSS-файл перед тем, как отрисует страницу. Это делает CSS ресурсом, блокирующим рендеринг. Если файл большой или соединение медленное, то запрос стилей может значительно увеличить время отрисовки страницы.
 

@@ -1,10 +1,12 @@
 ---
 title: 'Как работает nth-child'
 date: 2011-11-21
+author:
+    name: 'Крис Койер'
+    url: 'https://css-tricks.com/author/chriscoyier/'
 source:
     title: 'How nth-child Works'
     url: 'http://css-tricks.com/5452-how-nth-child-works/'
-    author: 'Крис Койер'
 translators:
   - name: 'Вадим Макеев'
     url: 'https://twitter.com/pepelsbey'

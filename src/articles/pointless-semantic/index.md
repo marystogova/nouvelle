@@ -1,10 +1,12 @@
 ---
 title: 'Наша бессмысленная погоня за семантической ценностью'
 date: 2012-08-09
+author:
+    name: 'Дивья Маньян'
+    url: 'http://nimbupani.com/'
 source:
     title: 'Our pointless pursuit of semantic value'
     url: 'https://www.smashingmagazine.com/2011/11/our-pointless-pursuit-of-semantic-value/'
-    author: 'Дивья Маньян'
 translators:
   - name: 'Влад Андерсен'
     url: 'http://www.facebook.com/vlad.andersen'

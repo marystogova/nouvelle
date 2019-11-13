@@ -1,10 +1,12 @@
 ---
 title: 'Ценность осмысленности'
 date: 2012-08-09
+author:
+    name: 'Кайл Вимс'
+    url: 'http://cssquirrel.com/'
 source:
     title: 'The value of meaning'
     url: 'http://cssquirrel.com/blog/2011/11/11/the-value-of-meaning/'
-    author: 'Кайл Вимс'
 translators:
   - name: 'Влад Андерсен'
     url: 'http://www.facebook.com/vlad.andersen'

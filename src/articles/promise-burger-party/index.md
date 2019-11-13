@@ -1,10 +1,12 @@
 ---
 title: 'Обещание бургерной вечеринки'
 date: 2017-02-09
+author:
+    name: 'Марико Косака'
+    url: 'https://kosamari.com/'
 source:
     title: 'The promise of a burger party'
     url: 'https://kosamari.com/notes/the-promise-of-a-burger-party'
-    author: 'Марико Косака'
 translators:
   - name: 'Владислав Почепцов'
     url: 'https://medium.com/@vlad_poe'
