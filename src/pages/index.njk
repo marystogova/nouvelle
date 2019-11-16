@@ -13,10 +13,17 @@ permalink: index.html
         {%- for article in collections.article | reverse -%}
             {% if loop.index0 < 5 %}
                 <li class="articles__item{{ "--main" if loop.index0 == 0 }}">
+                    {% set blobColor %}{{ ['teal', 'lightteal', 'moss', 'grass'] | random }}{% endset %}
+                    {% set blobShape %}{{ [1, 2, 3, 4, 5, 6, 7] | random }}{% endset %}
                     <article class="articles">
                         <div class="articles__author">
-                            <img class="articles__author-img" src="/images/author--blue.png"
-                                 height="104" width="113" alt="{{ article.data.source.author }}">
+                            {% for author in collections.people | filterPeople(article.data.author) %}
+                                <img
+                                    class="articles__author-img blob--{{ blobColor }} blob--shape-{{ blobShape }}"
+                                    src="/images/author--placeholder.jpg"
+                                    width="113" height="104"
+                                    alt="{{ author.name }}">
+                            {% endfor %}
                         </div>
                         <div class="articles__info">
                             <div class="articles__main">
@@ -28,8 +35,11 @@ permalink: index.html
                                 {%- endif -%}
                             </div>
                             <p class="articles__meta">
-                                <time class="articles__date" datetime="{{ article.date }}">4 февраля</time>
-                                <span class="articles__author-name">{{ article.data.source.author }}</span>
+                                <time class="articles__date"
+                                      datetime="{{ article.date | isoDate }}">{{ article.date | ruDate }}</time>
+                                {% for author in collections.people | filterPeople(article.data.author) %}
+                                    <span class="articles__author-name">{{ author.name }}</span>
+                                {% endfor %}
                             </p>
                         </div>
                     </article>
