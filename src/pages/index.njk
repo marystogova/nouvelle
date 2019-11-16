@@ -6,7 +6,7 @@ permalink: index.html
 
 {% include 'header.njk' %}
 
-<main class="main">
+<main class="articles--main">
     {{ content | safe }}
 
     <ul class="articles__list">
@@ -14,21 +14,29 @@ permalink: index.html
             {% if loop.index0 < 5 %}
                 <li class="articles__item{{ "--main" if loop.index0 == 0 }}">
                     <article class="articles">
-                        <h2 class="articles__title">
-                            <a href="{{ article.url }}">
-                                {{ article.data.title }}
-                            </a>
-                        </h2>
-                        {#<div class="articles__description">#}
-                        <img class="articles__author-img" src="/images/author--blue.png"
-                             height="104" width="113" alt="{{ article.data.source.author }}">
-                        <p>
-                            <time class="articles__date" datetime="{{ article.date }}">4 февраля</time>
-                            <span class="articles__author">{{ article.data.source.author }}</span>
-                        </p>
-                        {#</div>#}
+                        <div class="articles__author">
+                            <img class="articles__author-img" src="/images/author--blue.png"
+                                 height="104" width="113" alt="{{ article.data.source.author }}">
+                        </div>
+                        <div class="articles__info">
+                            <div class="articles__main">
+                                <h2 class="articles__title">
+                                    <a href="{{ article.url }}">{{ article.data.title }}</a>
+                                </h2>
+                                {% if loop.index0 == 0 %}
+                                    <p class="articles__description">{{ article.data.description }}</p>
+                                {%- endif -%}
+                            </div>
+                            <p class="articles__meta">
+                                <time class="articles__date" datetime="{{ article.date }}">4 февраля</time>
+                                <span class="articles__author-name">{{ article.data.source.author }}</span>
+                            </p>
+                        </div>
                     </article>
                 </li>
+                {% if loop.index0 == 1 %}
+                    <li aria-hidden="true" class="articles__item-decor"></li>
+                {%- endif -%}
             {%- endif -%}
         {%- endfor -%}
     </ul>
